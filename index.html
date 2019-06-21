@@ -81,7 +81,7 @@ window.onload = function () {
   //判断是否是苹果手机，是则是true
   var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
   if (isIos) {
-    fileTag.setAttribute('capture', 'camera');
+    fileTag.removeAttribute('capture');
   }
 
   fileTag.onchange = function () {
